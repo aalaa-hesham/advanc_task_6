@@ -1,0 +1,57 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "name": "bag",
+            "categoryId": "1",
+            "description": "good material",
+            "prict": 20,
+            "quantity": 12,
+            "imageUrl": "https://www.apc-us.com/cdn/shop/files/pxawv-f61567cad_03_1628068053_960x_825953c5-2033-4b7b-98c6-caac96e1ace6_600x.webp?v=1678829458"
+
+        },
+        {
+            "id": "2",
+            "name": "bag2",
+            "categoryId": "1",
+            "description": "good material",
+            "prict": 33,
+            "quantity": 5,
+            "imageUrl": "https://www.apc-us.com/cdn/shop/files/COEYO-M61802BAA_03_960x_e8310751-a35f-43d1-a3d3-5b3d98ceeb39_600x.webp?v=1678829312"
+
+        },
+        {
+            "id": "3",
+            "name": "bag3",
+            "categoryId": "2",
+            "description": "good material",
+            "prict": 33,
+            "quantity": 5,
+            "imageUrl": "https://www.apc-us.com/cdn/shop/files/PXAWV-F61161LAH_03_960x_a63b19ac-9933-44e8-902f-fc125fef4e6f_600x.webp?v=1678829216"
+
+        }
+    ],
+    "categories": [
+        {
+            "id": "1",
+            "title": "new clothes",
+            "description": "clother Category"
+        },
+        {
+            "id": "2",
+            "title": "Assets",
+            "description": "assets Category"
+        }
+    ],
+    "adds": [
+        {
+            "id": 1
+        },
+        {
+            "id": 2
+        },
+        {
+            "id": 3
+        }
+    ]
+}
