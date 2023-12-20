@@ -1,6 +1,5 @@
 import 'dart:convert';
 
-import 'package:advanc_task_6/models/product.model.dart';
 import 'package:advanc_task_6/seeder/dataseeder.dart';
 import 'package:carousel_slider/carousel_options.dart';
 import 'package:carousel_slider/carousel_slider.dart';
@@ -16,7 +15,7 @@ class Lispro extends StatefulWidget {
 }
 
 class _LisproState extends State<Lispro> {
-   @override
+  @override
   void initState() {
     getdatapro();
     super.initState();
@@ -26,41 +25,46 @@ class _LisproState extends State<Lispro> {
     await DataSeeder.loadData();
     setState(() {});
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 10),
-        child: Column(
-          
-          children: [
-            CarouselSlider.builder(
-            itemCount: DataSeeder.products.length,
-            itemBuilder: (BuildContext context, int index, int pageViewIndex) =>
-                (index),
-            options: CarouselOptions(
-              height: 200,
-              viewportFraction: .9,
-              padEnds: false,
-              initialPage: 0,
-              enableInfiniteScroll: true,
-              reverse: false,
-              autoPlay: true,
-              autoPlayInterval: const Duration(seconds: 3),
-              autoPlayAnimationDuration: const Duration(milliseconds: 800),
-              autoPlayCurve: Curves.fastOutSlowIn,
-              enlargeCenterPage: true,
-              enlargeFactor: 0.15,
-              onPageChanged: (index, _) {
-                index = index;
-                setState(() {});
-              },
-              scrollDirection: Axis.horizontal,
-            )),
-      
+        child: Column(children: [
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: CarouselSlider.builder(
+                itemCount: DataSeeder.ads.length,
+                itemBuilder: (ctx, index, _) {
+                  return Container(
+                      width: 500,
+                      margin: EdgeInsets.symmetric(horizontal: 5.0),
+                      decoration: BoxDecoration(color: Colors.black),
+                      child: Image.network(DataSeeder.ads[index].picture!));
+                },
+                options: CarouselOptions(
+                  height: 200,
+                  viewportFraction: .9,
+                  padEnds: false,
+                  initialPage: 0,
+                  enableInfiniteScroll: true,
+                  reverse: false,
+                  autoPlay: true,
+                  autoPlayInterval: const Duration(seconds: 3),
+                  autoPlayAnimationDuration: const Duration(milliseconds: 800),
+                  autoPlayCurve: Curves.fastOutSlowIn,
+                  enlargeCenterPage: true,
+                  enlargeFactor: 0.15,
+                  onPageChanged: (index, _) {
+                    index = index;
+                    setState(() {});
+                  },
+                  scrollDirection: Axis.horizontal,
+                )),
+          ),
         ]),
       ),
-    ) ;
+    );
   }
-
 }

@@ -5,8 +5,6 @@ class Product {
   String? name;
   double? price;
   int? quantity;
-  String? adds;
-  String? imageURL;
 
   Product();
 
@@ -17,7 +15,6 @@ class Product {
     name = data['name'];
     price = data['price'];
     quantity = data['quantity'];
-    imageURL = data['imageURL'];
   }
 
   Map<String, dynamic> toJson() {
@@ -28,7 +25,6 @@ class Product {
       "name": name,
       "price": price,
       "quantity": quantity,
-      "imageURL": imageURL,
     };
   }
 }

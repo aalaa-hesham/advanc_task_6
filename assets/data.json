@@ -43,15 +43,21 @@
             "description": "assets Category"
         }
     ],
-    "adds": [
+    "ads" : [
         {
-            "id": 1
+            "id" : "1",
+            "title" : "discount",
+            "picture" : "https://www.apc-us.com/cdn/shop/files/PXAWV-F61161LAH_03_960x_a63b19ac-9933-44e8-902f-fc125fef4e6f_600x.webp?v=1678829216"
         },
         {
-            "id": 2
+            "id" : "2",
+            "title" : "sales",
+            "picture" : "https://assets.hermes.cn/is/image/hermesproduct/steeple-28-bag--083610CKAA-worn-3-0-0-800-800_g.jpg"
         },
         {
-            "id": 3
+            "id" : "3",
+            "title" : "offers",
+            "picture" : "https://eg.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/35/289773/1.jpg"
         }
     ]
 }
